@@ -1,5 +1,11 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
+## Tampilan sederhana aplikasi CRUD
+![view](https://user-images.githubusercontent.com/29506357/116357489-b55e1e80-a826-11eb-9874-a100fe33bc25.png)
+![view](https://user-images.githubusercontent.com/29506357/116357573-ce66cf80-a826-11eb-89f0-1d9630f71bd1.png)
+![edit](https://user-images.githubusercontent.com/29506357/116357582-d0c92980-a826-11eb-8feb-97d2ca191fb4.png)
+
+
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
