@@ -46,7 +46,7 @@
                         <td>{{ $produk->harga }}</td>
                         <td>{{ $produk->jumlah }}</td>
                         <td>
-                            <a class="btn btn-sm btn-warning" href="">Edit</a>
+                            <a class="btn btn-sm btn-warning" href="{{ route('editProduk', ['id' => $produk->id]) }}">Edit</a>
                             <a class="btn btn-sm btn-danger" href="">Hapus</a>
                         </td>
                     </tr>

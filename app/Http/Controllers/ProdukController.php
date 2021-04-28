@@ -67,9 +67,14 @@ class ProdukController extends Controller
      * @param  \App\Models\Produk  $produk
      * @return \Illuminate\Http\Response
      */
-    public function edit(Produk $produk)
+    public function edit($id)
     {
-        //
+        $button = "Update";
+        $url = "updateProduk";
+
+        $produk = Produk::where('id', $id)->first();
+
+        return view('form', compact('url', 'button', 'produk'));
     }
 
     /**
@@ -81,7 +86,16 @@ class ProdukController extends Controller
      */
     public function update(Request $request, Produk $produk)
     {
-        //
+        $produk = Produk::find($request->id);
+        $data = $request->validate([
+            'nama_produk' => 'required',
+            'keterangan' => 'required',
+            'harga' => 'required',
+            'jumlah' => 'required'
+        ]);
+
+        $produk->update($data);
+        return redirect()->route("indexProduk");
     }
 
     /**
