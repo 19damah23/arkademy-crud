@@ -14,7 +14,8 @@ class ProdukController extends Controller
      */
     public function index()
     {
-        //
+        $produks = Produk::orderBy("id", "DESC")->get();
+        return view('welcome', compact("produks"));
     }
 
     /**
