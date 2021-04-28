@@ -25,7 +25,10 @@ class ProdukController extends Controller
      */
     public function create()
     {
-        //
+        $button = "Simpan";
+        $url = "storeProduk";
+
+        return view('form', compact('url', 'button'));
     }
 
     /**
@@ -36,7 +39,15 @@ class ProdukController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'nama_produk' => 'required',
+            'keterangan' => 'required',
+            'harga' => 'required',
+            'jumlah' => 'required'
+        ]);
+
+        Produk::create($data);
+        return redirect()->route("indexProduk");
     }
 
     /**

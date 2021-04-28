@@ -22,7 +22,7 @@
         <div class="container pt-5">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a class="btn btn-sm btn-primary" href="">+ Tambah Produk</a></li>
+                  <li class="breadcrumb-item"><a class="btn btn-sm btn-primary" href="{{ route("createProduk") }}">+ Tambah Produk</a></li>
                 </ol>
             </nav>
             <table class="table table-bordered">
